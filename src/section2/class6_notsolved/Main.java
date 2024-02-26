@@ -1,4 +1,4 @@
-package section2.class6_notsolve;
+package section2.class6_notsolved;
 
 import java.util.ArrayList;
 import java.util.List;
