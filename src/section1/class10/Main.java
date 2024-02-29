@@ -1,4 +1,4 @@
-package sectoin1.class10;
+package section1.class10;
 
 import java.util.ArrayList;
 import java.util.List;

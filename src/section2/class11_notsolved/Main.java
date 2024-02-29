@@ -15,7 +15,27 @@ public class Main {
                 input2[i][j] = kb.nextInt();
             }
         }
-        System.out.println(myTry(input1, input2));
+        System.out.println(solution(input1, input2));
+    }
+
+    private static int solution(int input1, int[][] input2) {
+        int answer = 0, max = Integer.MAX_VALUE;
+        for (int i = 0; i < input1; i++) {
+            int cnt = 0;
+            for (int j = 0; j < input1; j++) {
+                for (int k = 0; k < 5; k++) {
+                    if (input2[i][k] == input2[j][k]) {
+                        cnt++;
+                        break;
+                    }
+                }
+            }
+            if (cnt > max) {
+                max = cnt;
+                answer = i + 1;
+            }
+        }
+        return answer;
     }
 
     private static int myTry(int input1, int[][] input2) {

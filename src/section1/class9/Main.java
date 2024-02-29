@@ -1,4 +1,4 @@
-package sectoin1.class9;
+package section1.class9;
 
 import java.util.Scanner;
 
